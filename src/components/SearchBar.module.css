@@ -1,0 +1,20 @@
+/* .search {
+    display: flex;
+} */
+
+.input {
+    width: 400px;
+    height: 35px;
+    border-radius: 0px;
+    border: 1px black solid;
+}
+
+.button {
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    border: none;
+}
+
