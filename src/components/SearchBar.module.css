@@ -1,20 +1,55 @@
-/* .search {
-    display: flex;
-} */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
 
-.input {
+.container img {
+    position: absolute;
+    width: fit-content;
+}
+
+.container h1 {
+    position: absolute;
+    font-size: 70px;
+    top: 40%;
+    left: 60%;
+    color: white;
+}
+
+.container input {
+    position: absolute;
+    top: 50%;
+    left: 60%;
     width: 400px;
     height: 35px;
     border-radius: 0px;
     border: 1px black solid;
+    padding: 10px;
 }
 
-.button {
+.container input:focus {
+    outline: none;
+}
+
+.container input:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.container button {
+    position: absolute;
+    top: 50%;
+    left: 80%;
     width: 100px;
     height: 35px;
     background-color: black;
     color: white;
     border-radius: 0px;
     border: none;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background-color: rgb(17, 18, 90);
 }
 
