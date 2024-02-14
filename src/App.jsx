@@ -1,15 +1,21 @@
 import './App.css'
 import NavBar from './components/NavBar.jsx';
 import SearchBar from './components/SearchBar.jsx';
-import Item from './components/Item.jsx';
+import Product from './components/Product.jsx';
 
 function App() {
+  const products = [
+    { name: 'IPhone15' },
+    { name: 'IPhone15Plus'},
+    { name: 'IPhone15Pro'},
+    { name: 'IPhone15ProMax'},
+  ]
 
   return (
     <>
       <NavBar/>
       <SearchBar/>
-      <Item/>
+      <Product products = {products}/>
     </>
   )
 }

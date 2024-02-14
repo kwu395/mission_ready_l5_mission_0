@@ -6,7 +6,7 @@ export default function SearchBar() {
     <div className={style.container}>
         <img src="./background.jpg"/>
         <h1>MOBILE MART</h1>
-        <input className={style.input} type="text"/>
+        <input className={style.input} type="text" placeholder="Search by Keywords..."/>
         <button className={style.button}>Search</button>
     </div>
   )

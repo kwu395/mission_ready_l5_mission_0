@@ -10,6 +10,7 @@ export default function NavBar() {
           <li>Hot Deals</li>
           <li>Help</li>
           <button>Login</button>
+          <img src="./Hamburger.png"/>
         </ul>
       </div>
     </div>

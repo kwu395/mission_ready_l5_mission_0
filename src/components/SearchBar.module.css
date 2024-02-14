@@ -1,31 +1,35 @@
 .container {
     position: relative;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container img {
     position: absolute;
-    width: fit-content;
+    width: 100vw;
 }
 
 .container h1 {
     position: absolute;
-    font-size: 70px;
-    top: 40%;
-    left: 60%;
+    font-size: 6vw;
+    width: 50vw;
+    top: 20vh;
+    left: 75%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
 .container input {
     position: absolute;
-    top: 50%;
-    left: 60%;
-    width: 400px;
-    height: 35px;
+    top: 30vh;
+    left: 62.7%;
+    width: 25vw;
+    height: 4vh;
     border-radius: 0px;
     border: 1px black solid;
     padding: 10px;
+    transform: translate(-50%, -50%);
 }
 
 .container input:focus {
@@ -38,18 +42,19 @@
 
 .container button {
     position: absolute;
-    top: 50%;
-    left: 80%;
-    width: 100px;
-    height: 35px;
+    top: 30vh;
+    left: 78%;
+    width: 12vw;
+    max-width: 100px;
+    height: 4vh;
     background-color: black;
     color: white;
     border-radius: 0px;
     border: none;
+    transform: translate(-50%, -50%);
 }
 
 .container button:hover {
     cursor: pointer;
     background-color: rgb(17, 18, 90);
 }
-

@@ -1,5 +1,7 @@
 .navbar {
     background-color: lightblue;
+    width: 99vw;
+    overflow: hidden;
 }
 
 .rightList {
@@ -7,8 +9,18 @@
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    gap: 30px;
+    gap: 15px;
     height: 70px;
+}
+
+.rightList img {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
 }
 
 .rightList li {
@@ -34,4 +46,16 @@
 .rightList button:hover {
     cursor: pointer;
     background: rgb(235, 235, 235);
+}
+
+@media only screen and (max-width: 480px) {
+    .rightList li{
+        display: none;
+    }
+    .rightList button{
+        display: none;
+    }
+    .rightList img {
+        display: block;
+    }
 }
