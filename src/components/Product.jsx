@@ -3,6 +3,8 @@ import style from './Product.module.css'
 
 export default function Products(props) {
   return (
+    <>
+    <h1 className = {style.header}>IPHONES</h1>
     <div className = {style.products}>
       {props.products.map((product, index) => 
         <div key={index} className = {style.box}>
@@ -11,5 +13,6 @@ export default function Products(props) {
         </div>
       )}
     </div>
+    </>
   )
 }

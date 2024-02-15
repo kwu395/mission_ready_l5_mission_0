@@ -1,30 +1,70 @@
+.header {
+    background-color: lightcyan;
+    color: black;
+    padding: 12% 0px 0px 10%;
+    cursor: pointer;
+}
+
 .products {
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    width: 99vw;
-    gap: 10%;
-    padding: 5%;
-    background-color: lightblue;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    gap: 5%;
+    padding: 2% 5% 5% 5%;
+    background-color: lightcyan;
     overflow: hidden;
 }
 
 .products img {
-    border: 2px black inset;
-    background-color: lightblue;
-    border-radius: 30px;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 10%;
     cursor: pointer;
 }
 
 .products h3 {
-    /* border: 2px black inset;
-    background-color: lightblue; */
     text-align: center;
     cursor: pointer;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: rgb(197, 241, 241);
+    border-radius: 10px;
 }
 
-.products box {
-    border: 2px black solid;
+.box {
+    border: 2px black inset;
+    background-color: lightcyan;
+    border-radius: 10px;
+    width: 15%;
+    margin-bottom: 10%;
+}
+
+.box:hover {
+    background-color: rgb(137, 199, 219); 
+}
+
+@media only screen and (max-width: 992px) {
+    .box {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 35%;
+    }
+    .header {
+        padding: 20% 0px 0px 10%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box {
+        width: 50%;
+    }
+    .header {
+        padding: 5% 0px 0px 10%; 
+    }
 }

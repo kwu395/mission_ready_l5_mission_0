@@ -1,35 +1,37 @@
 .container {
-    position: relative;
-    width: 99vw;
-    height: 100vh;
+    width: 100vw;
+    height: 80vh;
     overflow: hidden;
+    background-color: black;
 }
 
 .container img {
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    height: auto;
 }
 
 .container h1 {
-    position: absolute;
+    position: relative;
     font-size: 6vw;
     width: 50vw;
     top: 20vh;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    left: 52%;
     color: white;
+    background: -webkit-linear-gradient(#ffffff, #2aedff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container input {
-    position: absolute;
-    top: 30vh;
-    left: 62.7%;
-    width: 25vw;
+    position: relative;
+    top: 25vh;
+    left: 52.3%;
+    width: 28vw;
     height: 4vh;
     border-radius: 0px;
     border: 1px black solid;
     padding: 10px;
-    transform: translate(-50%, -50%);
 }
 
 .container input:focus {
@@ -41,9 +43,9 @@
 }
 
 .container button {
-    position: absolute;
-    top: 30vh;
-    left: 78%;
+    position: relative;
+    top: 27vh;
+    left: 54.5%;
     width: 12vw;
     max-width: 100px;
     height: 4vh;
@@ -57,4 +59,69 @@
 .container button:hover {
     cursor: pointer;
     background-color: rgb(17, 18, 90);
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        height: 68vh;
+    }
+    .search {
+        position: relative;
+        bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        height: 56vh;
+    }
+    .search {
+        position: relative;
+        bottom: 20%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        height: 44vh;
+    }
+    .search {
+        position: relative;
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 27vh;
+    }
+    .search {
+        position: relative;
+        bottom: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        height: 25vh;
+    }
+    .search {
+        position: relative;
+        bottom: 60%;
+        right: 40%;
+    }
+    .container input {
+        width: 60vw;
+        height: 5vh;
+    }
+    .container button {
+        height: 5vh;
+        width: 20vw;
+        left: 62%;
+        top: 27.5vh;
+    }
+    .container h1 {
+        font-size: 10vw;
+        width: 100%;
+    }
 }

@@ -1,7 +1,15 @@
 .navbar {
     background-color: lightblue;
-    width: 99vw;
+    width: 100vw;
     overflow: hidden;
+}
+
+.navbar img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    cursor: pointer;
 }
 
 .rightList {
@@ -9,7 +17,6 @@
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    gap: 15px;
     height: 70px;
 }
 
@@ -19,12 +26,16 @@
     width: 30px;
     height: 30px;
     top: 20px;
-    right: 30px;
+    margin-right: 30px;
     cursor: pointer;
 }
 
 .rightList li {
-    padding: 25px 25px 25px 25px;
+    width: 110px;
+    padding: 17.5px;
+    margin: 10px 5px 10px 5px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .rightList li:hover {
@@ -34,18 +45,26 @@
 
 .rightList button {
     height: 50%;
-    margin-top: 17.5px;
-    margin-bottom: 17.5px;
-    margin-right: 30px;
+    margin: 17.5px 30px 17.5px 15px;
     padding: 10px 30px 10px 30px;
     border-radius: 0px;
     border: 1.5px solid black;
     background: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
 }
 
 .rightList button:hover {
     cursor: pointer;
     background: rgb(235, 235, 235);
+}
+
+@media only screen and (max-width: 768px) {
+    .rightList li {
+        font-size: 12px;
+        margin: 10px 0px 10px 0px;
+        width: 100px;
+    }    
 }
 
 @media only screen and (max-width: 480px) {

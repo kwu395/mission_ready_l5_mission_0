@@ -5,6 +5,7 @@ export default function NavBar() {
   return (
     <div className = {style.navbar}>
       <div>
+      <img src="./Logo.png"/>
         <ul className = {style.rightList}>
           <li>Brands</li>
           <li>Hot Deals</li>
