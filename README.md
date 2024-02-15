@@ -1,8 +1,31 @@
-# React + Vite
+# Mission 0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A basic website wireframe with responsive design. See images below.
 
-Currently, two official plugins are available:
+Responsiveness was implemented using media queries with 5 breakpoints.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
+- React
+- JSX and CSS
+
+### React Components
+- NavBar.jsx
+- SearchBar.jsx
+- Product.jsx
+
+# Website Screenshots
+
+### Full Size
+
+![Image1](./Image1.png)
+
+![Image1](./Image2.png)
+
+### Medium Size
+
+![Image1](./Image3.png)
+
+### Mobile Size
+
+![Image1](./Image4.png)
+
